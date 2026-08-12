@@ -37,22 +37,13 @@
         Cancel
     </a>
 
+    &nbsp;|&nbsp;
 
-    <a href="{% url 'edit_contact' contact.id %}">
-    Edit Contact
-</a>
+    <a href="{% url 'edit_contact' contact.id %}">Edit Contact</a>
 
-<br><br>
+    &nbsp;|&nbsp;
 
-<a href="{% url 'delete_contact' contact.id %}">
-    Delete Contact
-</a>
-
-<br><br>
-
-<a href="{% url 'home' %}">
-    Back to Contacts
-</a>
+    <a href="{% url 'home' %}">Back to Contacts</a>
 </body>
 
 </html>
