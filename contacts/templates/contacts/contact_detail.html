@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ contact.first_name }} {{ contact.last_name }}</title>
+</head>
+
+<body>
+
+    <h1>Contact Details</h1>
+
+    <p>
+        <strong>First Name:</strong>
+        {{ contact.first_name }}
+    </p>
+
+    <p>
+        <strong>Last Name:</strong>
+        {{ contact.last_name }}
+    </p>
+
+    <p>
+        <strong>Phone:</strong>
+        {{ contact.phone_number }}
+    </p>
+
+    <p>
+        <strong>Email:</strong>
+        {{ contact.email }}
+    </p>
+
+    <p>
+        <strong>Address:</strong>
+        {{ contact.address }}
+    </p>
+
+    <p>
+        <strong>Created:</strong>
+        {{ contact.created_at }}
+    </p>
+
+    <p>
+        <strong>Last Updated:</strong>
+        {{ contact.updated_at }}
+    </p>
+
+   <a href="{% url 'edit_contact' contact.id %}">
+    Edit Contact
+</a>
+
+<br><br>
+
+<a href="{% url 'home' %}">
+    Back to Contacts
+</a>
+
+</body>
+</html>
